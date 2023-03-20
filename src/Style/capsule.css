@@ -1,0 +1,194 @@
+.capsule-container{
+    margin-top: 7%;
+}
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+    overflow-x: hidden;
+    
+  }
+  
+  .input-container {
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #select-option{
+    color: #fff;
+  }
+  #original_launch-input{
+    color: black;
+  }
+  label {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    background-color:#282727;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  
+  input[type="date"], input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+  
+  input[type="date"]:hover, input[type="text"]:hover {
+    border: 1px solid aquamarine;
+  }
+  
+  .select-enter {
+    opacity: 0;
+  }
+  
+  .select-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .select-exit {
+    opacity: 1;
+  }
+  
+  .select-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .select-height {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .select-height-active {
+    height: auto;
+    overflow: visible;
+  }
+  .capsules-card-container{
+    margin-top: 5%;
+
+  }
+  .capsules-card{
+    
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    justify-content: center;
+    
+  }
+ 
+  .capsules-card>div{
+    text-align: center;
+    width: 70%;
+  }
+
+  .card {
+    background-color: #282727;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    /* width: 100%; */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card > p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .pagination{
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  
+
+    .btn-card {
+      background-color: rgb(229, 224, 224);
+      border: 2px solid black;
+      border-radius: 5px;
+      color: black;
+      padding: 6px;
+      cursor: pointer;
+      /* font-size: 1.5rem;   */
+      background-image: linear-gradient(to top, black 50%, transparent 50%);
+      background-size: 100% 200%;
+      background-position: top;
+      transition: background-position 0.2s ease-in-out; /** I've changed the time for demo purposes **/
+      
+    }
+    
+    .btn-card:hover {
+      color: white;
+      background-position: bottom;
+      transform: scale(1.05);
+    }
+
+    @media (min-width:601px) and (max-width: 850px) {
+      /*Mobile View */
+      .capsule-container{
+        margin-top: 12%;
+    }
+      .capsules-card{
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        justify-content: center;
+        
+      }
+    }
+    @media (max-width:600px){
+      .capsule-container{
+        margin-top: 15%;
+    }
+      .capsules-card{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+        justify-content: center;
+        
+      }
+    }
